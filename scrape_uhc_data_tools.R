@@ -35,34 +35,6 @@ scrape_tools <- function(html_url,
     NA_character_
   }
 
-  build_image_url <- function(href, base, page_url) {
-    if (is.na(href) || !nzchar(href)) return(NA_character_)
-    # absolute href relative to page
-    abs_href <- xml2::url_absolute(href, page_url)
-    # return directly if it already points to an image
-    if (grepl("\\.(png|jpg|jpeg|gif|svg)([?#].*)?$", abs_href, ignore.case = TRUE)) {
-      return(abs_href)
-    }
-    # remove scheme+host and query/fragment for path operations
-    path <- sub("^[a-zA-Z]+://[^/]+/", "", abs_href)
-    path <- sub("[?#].*$", "", path)
-    path <- sub("^\\./+", "", path)
-
-    # if the path already contains img/gallery, use that path under the provided base
-    if (grepl("(^|/)img/gallery(/|$)", path, ignore.case = TRUE)) {
-      base_fixed <- sub("/+$", "/", base)
-      return(paste0(base_fixed, sub("^/+", "", path)))
-    }
-
-    # fallback: build img/gallery/{basename}.PNG from the target page or path
-    bn <- basename(path)
-    bn_no_ext <- sub("\\.html?$", "", bn, ignore.case = TRUE)
-    if (!nzchar(bn_no_ext)) return(NA_character_)
-    img_path <- file.path("img", "gallery", paste0(bn_no_ext, ".PNG"))
-    base_fixed <- sub("/+$", "/", base)
-    paste0(base_fixed, sub("^/+", "", img_path))
-  }
-
   rows <- map_df(items, function(item) {
     title <- safe_text(item, c(".title", ".toolTitle", "h1", "h2", "h3", ".card-title"))
     date  <- safe_text(item, c(".date", ".toolDate", ".meta .date"))
