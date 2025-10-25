@@ -75,13 +75,13 @@ scrape_tools <- function(html_url,
     }
 
     tibble::tibble(
-      title = ifelse(is.na(title), NA_character_, title),
-      date  = ifelse(is.na(date),  NA_character_, date),
-      desc  = ifelse(is.na(desc),  NA_character_, desc),
-      tags  = ifelse(is.na(tags),  NA_character_, tags),
-      link  = ifelse(is.na(href),  NA_character_, href),
-      link_abs = ifelse(is.na(link_resolved), NA_character_, link_resolved),
-      image_url = ifelse(is.na(image_url), NA_character_, image_url)
+      title = title,
+      date  = date,
+      desc  = desc,
+      tags  = tags,
+      link  = href,
+      link_abs = link_resolved,
+      image_url = image_url
     )
   })
 
