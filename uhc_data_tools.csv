@@ -1,0 +1,81 @@
+title,date,desc,link,link_abs,image_url
+Mapping Spatial Social Polarization,Feb 2024,"Explore the index of concentration at the extremes, a common measure of spatial social polarization. Filter by
+        geographical scale, metric, and location and explore using an interactive map and chart. Filtered data is
+        downloadable as CSV, shapefile, or GeoJSON.",https://drexel-uhc.shinyapps.io/SSP_Maps/,https://drexel-uhc.shinyapps.io/SSP_Maps/,https://drexel-uhc.github.io/data-tools/img/gallery/lisa-snip.png
+SALURBAL Portal,Nov 2023,"Interface for SALURBAL project data, metadata and products.",https://data.lacurbanhealth.org/,https://data.lacurbanhealth.org/,https://drexel-uhc.github.io/data-tools/img/gallery/salurbal-portal-snip.png
+SALURBAL City Selection Scrolly,Nov 2023,Visual explainer (scrolly) for city selection process in SALURBAL project.,https://drexel-uhc.github.io/salurbal-city-selection-scrolly/,https://drexel-uhc.github.io/salurbal-city-selection-scrolly/,https://drexel-uhc.github.io/data-tools/img/gallery/city-selectin-snip.png
+SALURBAL Cities Web Application,Sep 2023,"This web app allows users to interactively explore SALURBAL L1ADs and L2s. It can be embedded in other
+        applications.",https://drx.maps.arcgis.com/apps/instant/basic/index.html?appid=025fb2ad97394ac492c8ce6ddc1f0df1,https://drx.maps.arcgis.com/apps/instant/basic/index.html?appid=025fb2ad97394ac492c8ce6ddc1f0df1,https://drexel-uhc.github.io/data-tools/img/gallery/esri-salurbal-sep-2024.png
+Scrollytelling Template,May 2023,UHC branded template for scrollytelling in Svelte.js.,https://drexel-uhc.github.io/uhc-svelte-scrolly-kitchen-sink-1/,https://drexel-uhc.github.io/uhc-svelte-scrolly-kitchen-sink-1/,https://drexel-uhc.github.io/data-tools/img/gallery/scrolly-uhc-template.png
+Philadelphia Neighborhoods for Public Health Research,May 2023,An overview of Philadelphia neighborhoods used by UHC and others for public health research as a StoryMap,https://storymaps.arcgis.com/stories/07e53edecf2d423ab7231586eefebb7b,https://storymaps.arcgis.com/stories/07e53edecf2d423ab7231586eefebb7b,https://drexel-uhc.github.io/data-tools/img/gallery/PHLNbhds.PNG
+THE FOOD ENVIRONMENT ELECTRONIC DATABASE DIRECTORY (FEED),"Nov, 2022","FEED is a web-based tool that provides users with an annually updated directory on food environment data
+        sources. FEED provides basic information such as access permissions, spatiotemporal details, and also annotates
+        each source with strengths and limitations. Additionally, sources are mapped to food environment constructs and
+        include example publications. By providing comprehensive information, FEED enables evidence-based
+        decision-making regarding how the food environment is measured.",http://www.foodenvironmentdirectory.com/,http://www.foodenvironmentdirectory.com/,https://drexel-uhc.github.io/data-tools/img/gallery/feed.png
+"Heterogeneity in Disparities in Life Expectancy across US Metropolitan
+        Areas","Nov, 2022","This article highlights key disparities in life expectancy in US MSAs.
+        This app does two things: 1) translates the article figures into
+        interactive visualizations, allowing more granular exploration of the
+        article analysis, and 2) extends scope of the data visualized to
+        include all US MSAs.",,,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_LE_Income_ineq_cities.PNG
+Big Cities Health Inventory,Nov 2021,"The Big Cities Health Inventory (BCHI) is the Big Cities Health Coalition’s open-access data platform. Today,
+        more than 80% of the U.S. population live in metropolitan areas. There is a clear need for city-level data to
+        understand and inform a city’s health and ensure that programs are equitable and responsive to a city’s health
+        needs. The BCHI provides a baseline of health in urban communities, and time trends can be used to explore
+        patterns in the data that may point to the effectiveness of policies and practices at work in Big Cities Health
+        Coalition’s member jurisdictions.",https://bigcitieshealthdata.org/,https://bigcitieshealthdata.org/,https://drexel-uhc.github.io/data-tools/img/gallery/bchc-snip.png
+City-level impact of extreme temperatures and mortality in Latin America,June 2021,"This app translates figures and results from Kephart et al. (2022, Nature Medicine) into interactive
+        visualizations, allowing more granular exploration of the article analysis.",https://drexel-uhc.shinyapps.io/MS85/,https://drexel-uhc.shinyapps.io/MS85/,https://drexel-uhc.github.io/data-tools/img/gallery/heat-shiny-snip.png
+Interactive Blogs for BCHC COVID-19 Website,June 2021,"Javascript based interactive vizualizations can be included in basic
+        HTML pages. This blog shows JS viz from the BCHC COVID-19 Dashboard in
+        a blog post.",https://www.covid-inequities.info/blog/2021/06/30/2021-06-30-tracking-covid-19-vaccination-inequities-in-us-cities/,https://www.covid-inequities.info/blog/2021/06/30/2021-06-30-tracking-covid-19-vaccination-inequities-in-us-cities/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_js_blog_bchc_covid.PNG
+COVID-19 Health Inequities in Cities,Jan 2021,"Compare, and track inequities along three dimensions (1) across
+        subgroups of individuals within cities; (2) across neighborhoods
+        within cities, and (3) across cities.",https://www.covid-inequities.info/,https://www.covid-inequities.info/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_covid_ineq.PNG
+CANCER IN PHILADELPHIA NEIGHBORHOODS,Jan 2021,"Developed by the Drexel Urban Health Collaborative in collaboration
+        with a team from the Philadelphia Department of Public Health and Fox
+        Chase Cancer Center, this interactive data tool explores cancer,
+        cancer screening and select cancer risk factors in the neighborhoods
+        of Philadelphia. The goal of this report is to allow residents to
+        learn more about cancer risk factors and outcomes in their
+        neighborhood.",https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Cancer%20in%20Philadelphia%20Neighborhoods/,https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Cancer%20in%20Philadelphia%20Neighborhoods/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_cancer_philly_nb.PNG
+Life Expectancy and Mortality Profiles in Latin American Cities,Jan 2021,"This app provides extra information and data on the manuscript
+        entitled Life expectancy and mortality in 363 cities of Latin America:
+        the SALURBAL project",https://www.nature.com/articles/s41591-020-01214-4,https://www.nature.com/articles/s41591-020-01214-4,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_ms10.PNG
+Latin_America_Urban_Areas_1_29_20,Jan 2021,Latin America Urban Areas included in the SALURBAL study,https://arcg.is/0aeyP0,https://arcg.is/0aeyP0,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_esri_webmap_salurbal.PNG
+THE STATE OF CANCER IN PHILADELPHIA,Sep 2020,"The goal of this report is to identify and characterize disparities in
+        cancer incidence and mortality, uses of cancer screening, and select
+        cancer risk factors in Philadelphia between 2000-2018. The ultimate
+        purpose is to use this information to motivate and support programs
+        and policies aimed at reducing cancer risks and disparities.",https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Basic%20Page/,https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Basic%20Page/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_state_of_cancer.PNG
+COVID-19 Vulnerability Indicators in Philadelphia,July 2020,"In response to the COVID-19 pandemic, the Drexel West Philly Promise
+        Neighborhood team has built data dashboards to help to identify areas
+        in Philadelphia that are at highest risk for COVID-19 and its
+        longer-term impacts.",https://drexel.edu/uhc/resources/coronavirus/vulnerability-indicators/,https://drexel.edu/uhc/resources/coronavirus/vulnerability-indicators/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_tableau_covid_vuln.PNG
+SALURBAL COVID-19 Dashboard,May 2020,"The online dashboard developed by the SALURBAL project allows visitors
+        to plot trends of COVID-19 cases and deaths as well as to map these
+        outcomes at various geographic levels: country, city, and sub-city in
+        Latin American countries and compare the progress of the pandemic
+        across countries.",https://drexel-uhc.shinyapps.io/salurbal_covid19/,https://drexel-uhc.shinyapps.io/salurbal_covid19/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_shiny_salurbal_covid.PNG
+Internal Data QC Report,Internal - Unreleased,"Interactive documents and visualizations can be effective
+        communication tools for more complex data issues. This examples uses
+        JS tables and plots to highlight abnormalities in data during quality
+        checking.",pages/pages_js_internalReport_GDP.html,https://raw.githubusercontent.com/Drexel-UHC/data-tools/refs/heads/main/docs/pages/pages_js_internalReport_GDP.html,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_js_rmd_internal_report_gdp.PNG
+"Health and Health-Related Resources in Newly Designated Federally Qualified Opportunity Zones:
+        United States, 2012–2016",Feb 2020,Interactive feature for a paper.,https://neighborhooddata.shinyapps.io/FQOZ_Benchmark/,https://neighborhooddata.shinyapps.io/FQOZ_Benchmark/,https://drexel-uhc.github.io/data-tools/img/gallery/FQOZ_Benchmark.png
+Urban Landscape and Street Design Profiles,Dec 2019,"This tool examines how to quantify the contributions of city-level
+        Built Environment (BE) factors to differences in levels of health and
+        health inequalities within and between cities.",https://fabiancpl.github.io/salurbal/,https://fabiancpl.github.io/salurbal/,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_js_salurbal_urban_profiles.PNG
+Neighborhood Built Environment Features in Bogotá,Internal - Unreleased,"As part of the BEPIDL study, this data tool provides histogram and spatial distribution of the
+        neighborhood-level indicators for the built environment in Bogotá, Colombia.",https://heli-xu.shinyapps.io/zat-indicator/,https://heli-xu.shinyapps.io/zat-indicator/,https://drexel-uhc.github.io/data-tools/img/gallery/bepidl-shiny.png
+"Progress in Built Environment, Pedestrian Injuries and Deep Learning Study",Internal - Unreleased,"Blog posts on data cleaning, visualization and analyses/modeling from the Built Environment, Pedestrian Injuries
+        and Deep Learning Study. (Work in progress, aiming to make it more story-oriented.)",https://heli-xu.github.io/BEPIDL/,https://heli-xu.github.io/BEPIDL/,https://drexel-uhc.github.io/data-tools/img/gallery/bepidl-blog.png
+BCHC COVID Inequities Card,June 2021,"A example of serverless JS Applications. These don't require a server
+        to run (cheap) and are easily deployable in many technology stacks
+        (adaptable).",pages/app_bchc_covid_ineq/app_bchc_covid_ineq.html,https://raw.githubusercontent.com/Drexel-UHC/data-tools/refs/heads/main/docs/pages/app_bchc_covid_ineq/app_bchc_covid_ineq.html,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_js_bchc_covid_ineq_card.PNG
+SALURBAL FAIR Primer,Internal - Unreleased,Initial FAIR primer and FIP for the SALURBAL project.,https://drexel-uhc.github.io/salurbal-project-dashboard/,https://drexel-uhc.github.io/salurbal-project-dashboard/,https://drexel-uhc.github.io/data-tools/img/gallery/fair-primer-snip.png
+Analytics Corner,Internal - Unreleased,"Open source analytics blog to share knowledge and work,",https://drexel-uhc.github.io/analytics-corner/,https://drexel-uhc.github.io/analytics-corner/,https://drexel-uhc.github.io/data-tools/img/gallery/corner-snip.png
+BCHC Policy Analysis Tool,Unreleased,"This goal of this app is to provide an accessible tool to examine how
+        policy effects health outcomes. This is still being developed and
+        currently is only displaying simulated data.",,,https://drexel-uhc.github.io/data-tools/img/gallery/gallery_js_bchc_policy_tool.PNG
