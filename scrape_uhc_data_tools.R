@@ -59,7 +59,7 @@ scrape_tools <- function(html_url,
     }
     # Build full image URL by prepending base
     image_url <- if (!is.na(img_src) && nzchar(img_src)) {
-      paste0(image_base, sub("^/+", "", img_src))
+      xml2::url_absolute(img_src, image_base)
     } else {
       NA_character_
     }
