@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # Brief: scrape toolGalleryItem entries from an index.html and build image URLs
-# Usage: source("scrape_tools.R")  # or run as a script
+# Usage: source("scrape_uhc_data_tools.R")  # or run as a script
 
 library(httr)
 library(rvest)
