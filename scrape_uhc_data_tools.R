@@ -42,19 +42,19 @@ scrape_tools <- function(html_url,
     # link inside element with class outputsItem
     link_node <- html_node(item, ".outputsItem a, a.outputsItem, .outputsItem > a")
     href <- NA_character_
-    if (!is.na(link_node) && length(link_node) > 0) {
+    if (length(link_node) > 0) {
       href <- html_attr(link_node, "href")
     } else {
       # fallback: any anchor in the item
       any_a <- html_node(item, "a")
-      if (!is.na(any_a) && length(any_a) > 0) href <- html_attr(any_a, "href")
+      if (length(any_a) > 0) href <- html_attr(any_a, "href")
     }
     link_resolved <- if (!is.na(href) && nzchar(href)) xml2::url_absolute(href, html_url) else NA_character_
     
     # Extract image src directly from <img> tag
     img_node <- html_node(item, "img")
     img_src <- NA_character_
-    if (!is.na(img_node) && length(img_node) > 0) {
+    if (length(img_node) > 0) {
       img_src <- html_attr(img_node, "src")
     }
     # Build full image URL by prepending base
