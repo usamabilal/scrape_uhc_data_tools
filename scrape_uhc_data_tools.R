@@ -27,7 +27,7 @@ scrape_tools <- function(html_url,
   safe_text <- function(node, selectors) {
     for (sel in selectors) {
       el <- html_node(node, sel)
-      if (length(el) > 0) {
+      if (!is.na(el) && length(el) > 0) {
         txt <- html_text(el, trim = TRUE)
         if (!is.na(txt) && nzchar(txt)) return(txt)
       }
@@ -39,38 +39,49 @@ scrape_tools <- function(html_url,
     title <- safe_text(item, c(".title", ".toolTitle", "h1", "h2", "h3", ".card-title"))
     date  <- safe_text(item, c(".date", ".toolDate", ".meta .date"))
     desc  <- safe_text(item, c(".desc", ".description", "p", ".card-text"))
+    
+    # Extract tags from data-name attribute
+    tags_raw <- html_attr(item, "data-name")
+    tags <- if (!is.na(tags_raw) && nzchar(tags_raw)) {
+      # Split by spaces and join with commas
+      paste(str_split(tags_raw, "\\s+")[[1]], collapse = ", ")
+    } else {
+      NA_character_
+    }
+    
     # link inside element with class outputsItem
     link_node <- html_node(item, ".outputsItem a, a.outputsItem, .outputsItem > a")
     href <- NA_character_
-    if (length(link_node) > 0) {
+    if (!is.na(link_node) && length(link_node) > 0) {
       href <- html_attr(link_node, "href")
     } else {
       # fallback: any anchor in the item
       any_a <- html_node(item, "a")
-      if (length(any_a) > 0) href <- html_attr(any_a, "href")
+      if (!is.na(any_a) && length(any_a) > 0) href <- html_attr(any_a, "href")
     }
     link_resolved <- if (!is.na(href) && nzchar(href)) xml2::url_absolute(href, html_url) else NA_character_
     
     # Extract image src directly from <img> tag
     img_node <- html_node(item, "img")
     img_src <- NA_character_
-    if (length(img_node) > 0) {
+    if (!is.na(img_node) && length(img_node) > 0) {
       img_src <- html_attr(img_node, "src")
     }
     # Build full image URL by prepending base
     image_url <- if (!is.na(img_src) && nzchar(img_src)) {
-      xml2::url_absolute(img_src, image_base)
+      paste0(image_base, sub("^/+", "", img_src))
     } else {
       NA_character_
     }
 
     tibble::tibble(
-      title = title,
-      date  = date,
-      desc  = desc,
-      link  = href,
-      link_abs = link_resolved,
-      image_url = image_url
+      title = ifelse(is.na(title), NA_character_, title),
+      date  = ifelse(is.na(date),  NA_character_, date),
+      desc  = ifelse(is.na(desc),  NA_character_, desc),
+      tags  = ifelse(is.na(tags),  NA_character_, tags),
+      link  = ifelse(is.na(href),  NA_character_, href),
+      link_abs = ifelse(is.na(link_resolved), NA_character_, link_resolved),
+      image_url = ifelse(is.na(image_url), NA_character_, image_url)
     )
   })
 
