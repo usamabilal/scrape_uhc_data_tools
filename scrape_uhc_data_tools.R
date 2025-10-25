@@ -27,7 +27,7 @@ scrape_tools <- function(html_url,
   safe_text <- function(node, selectors) {
     for (sel in selectors) {
       el <- html_node(node, sel)
-      if (!is.na(el) && length(el) > 0) {
+      if (length(el) > 0) {
         txt <- html_text(el, trim = TRUE)
         if (!is.na(txt) && nzchar(txt)) return(txt)
       }
